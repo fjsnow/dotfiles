@@ -1,0 +1,38 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = """
+[┌ ]()\
+[$username](bold fg:purple)\
+[ in ](fg:gray)\
+[$directory](bold fg:blue)\
+[ $git_branch $git_status]()
+[└ ]()
+"""
+
+palette = 'fred'
+
+[palettes.fred]
+blue = '#a8c0d7'
+aqua = '#a3c8b3'
+green = '#d1e39f'
+orange = '#e6b68c'
+purple = '#d2a7c6'
+red = '#f0a0a0'
+yellow = '#f2d38b'
+
+[username]
+show_always = true
+format = '$user'
+
+[directory]
+format = "$path"
+truncation_length = 3
+truncation_symbol = ""
+
+[git_branch]
+format = '[on](fg:gray) [$branch](fg:yellow)'
+
+[git_status]
+format = '[$all_status$ahead_behind](fg:yellow)'
