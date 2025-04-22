@@ -64,10 +64,10 @@ return {
                                     },
                                     cargo = {
                                         buildScripts = { enable = true },
-                                        loadOutDirsFromCheck = true, -- Important for macro-generated code
+                                        loadOutDirsFromCheck = true,
                                     },
                                     procMacro = {
-                                        enable = true, -- Enables procedural macros
+                                        enable = true,
                                     },
                                     completion = {
                                         autoimport = { enable = true },
@@ -82,8 +82,6 @@ return {
     },
     {
         "j-hui/fidget.nvim",
-        opts = {
-            -- options
-        },
+        opts = {},
     },
 }
