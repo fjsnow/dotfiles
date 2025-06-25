@@ -1,5 +1,9 @@
 return {
     {
+        "Glench/Vim-Jinja2-Syntax",
+        ft = "jinja",
+    },
+    {
         "nvim-treesitter/nvim-treesitter",
         dependencies = { "rayliwell/tree-sitter-rstml" },
         build = ":TSUpdate",
@@ -37,6 +41,7 @@ return {
                     "vimdoc",
                     "xml",
                     "yaml",
+                    "jinja",
                 },
                 incremental_selection = {
                     enable = true,
