@@ -7,6 +7,7 @@ return {
         "nvim-treesitter/nvim-treesitter",
         dependencies = { "rayliwell/tree-sitter-rstml" },
         build = ":TSUpdate",
+        event = "BufReadPre",
         config = function()
             require("nvim-treesitter.configs").setup({
                 modules = {},
@@ -88,6 +89,7 @@ return {
     },
     {
         "HiPhish/rainbow-delimiters.nvim",
+        event = "BufReadPre",
         config = function()
             require("rainbow-delimiters.setup").setup({})
         end,

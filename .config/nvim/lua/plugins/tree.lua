@@ -7,7 +7,9 @@ return {
         "MunifTanjim/nui.nvim",
         "mrbjarksen/neo-tree-diagnostics.nvim",
     },
-    lazy = false,
+    lazy = true,
+    cmd = "Neotree",
+    keys = { { "<leader>t", "<cmd>Neotree toggle<CR>", desc = "Toggle NeoTree" } },
     opts = {
         window = {
             position = "right",

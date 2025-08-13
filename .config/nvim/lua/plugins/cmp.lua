@@ -7,6 +7,7 @@ return {
         "L3MON4D3/LuaSnip",
         "onsails/lspkind.nvim",
     },
+    event = "InsertCharPre",
     config = function()
         local cmp = require("cmp")
         local luasnip = require("luasnip")

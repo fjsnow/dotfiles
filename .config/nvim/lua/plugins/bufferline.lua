@@ -1,6 +1,7 @@
 return {
     "akinsho/bufferline.nvim",
     dependencies = { "kyazdani42/nvim-web-devicons" },
+    event = "BufAdd",
     config = function()
         require("bufferline").setup({
             options = {

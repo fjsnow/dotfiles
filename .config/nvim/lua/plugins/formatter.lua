@@ -1,5 +1,6 @@
 return {
     "mhartington/formatter.nvim",
+    event = "BufWritePost",
     config = function()
         local prettier = function()
             local filepath = vim.api.nvim_buf_get_name(0)
