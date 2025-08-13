@@ -1,3 +1,8 @@
+export PATH="/usr/local/bin:$PATH"
+
+# brew
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 # aliases
 alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias v="nvim"
